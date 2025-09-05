@@ -1,3 +1,7 @@
 {
-    "__name__": "Timer"
+  "__name__": "Časovač",
+  "__property__.action": "Akce k provedení",
+  "__property__.interval": "Interval",
+  "__property__.repeat": "Opakovat",
+  "__property__.unit": "Jednotka"
 }

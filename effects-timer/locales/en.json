@@ -1,3 +1,7 @@
 {
-    "__name__": "Timer"
+  "__name__": "Timer",
+  "__property__.action": "Action to execute",
+  "__property__.interval": "Interval",
+  "__property__.repeat": "Repeat",
+  "__property__.unit": "Unit"
 }
