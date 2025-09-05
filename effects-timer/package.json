@@ -12,8 +12,10 @@
     "@testing-library/react-hooks": "^8.0.1",
     "@testing-library/react-native": "^12.7.2",
     "@types/jest": "^29.5.13",
+    "babel-jest": "^29.7.0",
     "babel-preset-expo": "^12.0.5",
     "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "jest-expo": "^52.0.3",
     "react": "^18.2.0",
     "typescript": "^5.4.4"
@@ -25,10 +27,29 @@
     "root": true
   },
   "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
     "passWithNoTests": true,
-    "preset": "jest-expo",
+    "testEnvironment": "jsdom",
+    "testMatch": [
+      "**/*.test.tsx"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx|js|jsx)$": [
+        "babel-jest",
+        {
+          "presets": [
+            "babel-preset-expo"
+          ]
+        }
+      ]
+    },
     "transformIgnorePatterns": [
-      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@sentry/react-native|native-base|react-native-svg|jsonpath-plus)"
+      "node_modules/(?!(@alfons-app|jsonpath-plus)/)"
     ]
   },
   "license": "",
