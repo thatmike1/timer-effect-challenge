@@ -1,0 +1,5 @@
+{
+  "exclude": ["**/node_modules", ".out", "dist"],
+  "extends": "@alfons-app/pdk/tsconfig.json",
+  "include": ["alfons-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
+}

@@ -1,0 +1,52 @@
+{
+  "alfons": true,
+  "author": "michal.psencik",
+  "dependencies": {
+    "@alfons-app/pdk": "*",
+    "@fluentui/react-icons": "^2.0.271"
+  },
+  "devDependencies": {
+    "@alfons-app/eslint-config": "*",
+    "@alfons-app/sandbox": "*",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/react-native": "^12.7.2",
+    "@types/jest": "^29.5.13",
+    "babel-preset-expo": "^12.0.5",
+    "jest": "^29.7.0",
+    "jest-expo": "^52.0.3",
+    "react": "^18.2.0",
+    "typescript": "^5.4.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@alfons-app"
+    ],
+    "root": true
+  },
+  "jest": {
+    "passWithNoTests": true,
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@sentry/react-native|native-base|react-native-svg|jsonpath-plus)"
+    ]
+  },
+  "license": "",
+  "name": "@michal-psencik/effects-timer",
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://registry.npmjs.org/",
+    "scope": "michal-psencik"
+  },
+  "scripts": {
+    "lint": "eslint . --fix",
+    "sandbox": "sandbox",
+    "test": "jest --silent",
+    "test:watch": "jest --watchAll",
+    "typecheck": "tsc"
+  },
+  "version": "0.0.0"
+}
