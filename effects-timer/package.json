@@ -2,12 +2,12 @@
   "alfons": true,
   "author": "michal.psencik",
   "dependencies": {
-    "@alfons-app/pdk": "*",
+    "@alfons-app/pdk": "^0.11.1",
     "@fluentui/react-icons": "^2.0.271"
   },
   "devDependencies": {
-    "@alfons-app/eslint-config": "*",
-    "@alfons-app/sandbox": "*",
+    "@alfons-app/eslint-config": "^0.11.1",
+    "@alfons-app/sandbox": "^0.11.1",
     "@testing-library/jest-native": "^5.4.3",
     "@testing-library/react-hooks": "^8.0.1",
     "@testing-library/react-native": "^12.7.2",
